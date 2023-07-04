@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.4.js"integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <title> LiveConcert - Formulario </title>
+</head>
+<body>
+  <br>
+  
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">LiveConcert</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Vover al inicio</a>
+          </li>
+  </nav>
+  <br>
+  <br>
+  <div class="container">
+    <form class="row g-3 needs-validation" id="forms" novalidate method="post">
+      <div class="row">
+
+        <div class="col-md-4">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" name="nombre" required>
+          <div class="valid-feedback">
+            Bien!
+          </div>
+          <div class="invalid-feedback">
+            Es necesario ingresar un nombre
+          </div>
+        </div>
+
+        <div class="col-md-8">
+          <label for="apellido" class="form-label">Apellido</label>
+          <input type="text" class="form-control" id="apellido" name="apellido" required>
+          <div class="valid-feedback">
+            Bien!
+          </div>
+          <div class="invalid-feedback">
+            Es necesario ingresar el apellidolink rel="stylesheet" href="estilos.css">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <label for="provincia" class="form-label">Cantante</label>
+          <input type="text" class="form-control" id="provincia" name="cantante"required>
+          <div class="valid-feedback">
+            Bien!
+          </div>
+          <div class="invalid-feedback">
+            Es necesario ingresar un Cantante
+          </div>
+        </div>
+
+      <div class="col-md-8">
+        <label for="correo" class="form-label">Correo</label>
+        <input type="email" class="form-control" id="correo" name="correo" required>
+        <div class="valid-feedback">
+          Bien!
+        </div>
+        <div class="invalid-feedback">
+          Es necesario ingresar un correo
+        </div>
+      </div>
+    </div>
+    <div class="col-5">
+    <button type="button" id="botonagregar" class="btn btn-primary" onclick="checkInputs(event)">Enviar formulario</button>
+    </div>
+
+    </form>
+  </div>
+
+</body>
+
+<script>
+  var nombre = $("#nombre");
+  
+  var apellido = $("#apellido");
+
+  var provincia = $("#provincia");
+
+  var correo = $("#correo");
+
+  function checkInputs(e){
+    var campos=0;
+    e.preventDefault();
+    if(nombre.val().length > 2){
+      nombre.addClass("is-valid");
+      nombre.removeClass("is-invalid");
+      campos++;
+    } 
+    else{
+          nombre.addClass("is-invalid");
+    }
+    
+    if(apellido.val().length > 2){
+      apellido.addClass("is-valid");
+      apellido.removeClass("is-invalid");
+      campos++;
+    }
+    else{
+          apellido.addClass("is-invalid");
+    }
+
+    if(provincia.val().length > 4){
+      provincia.addClass("is-valid");
+      provincia.removeClass("is-invalid");
+      campos++;
+    }
+    else{
+          provincia.addClass("is-invalid");
+    }
+
+    if(isCorreo(correo.val())==true){
+      correo.addClass("is-valid");
+      correo.removeClass("is-invalid");
+      campos++;
+    }else{
+      correo.addClass("is-invalid");
+    }
+
+    if(campos==4){
+    $.ajax({
+      method:"post",
+      url:"/insertar",
+      data: $("#forms").serialize()
+    })
+    console.log($("#forms").serialize());
+   }
+    
+  };
+
+  function isCorreo(correo){
+    var expresion= /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+    var valid= expresion.test(correo);
+    return valid;
+  }
+
+</script>
+</html>
