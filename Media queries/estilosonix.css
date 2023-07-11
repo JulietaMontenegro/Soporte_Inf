@@ -1,0 +1,162 @@
+body{
+    background-color: #F5EDF5;
+    margin: 0;
+    padding: 0;
+}
+#barranav a{
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: maquinadeescribir;
+}
+#ainicio{
+    margin-right: 20px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    background-color: #C49CC8;
+    align-items: center;
+    padding: 4px;
+    margin-bottom: 0;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+#imglogo{
+    height: 40px;
+    width: 60px;
+    margin: 2px;
+}
+nav a:hover{
+    color:black;
+}
+@font-face{
+    font-family:cursivaimport;
+    src: url(Amarillo.ttf);
+}
+#cajubarra{
+    font-family: cursivaimport;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+@font-face{
+    font-family: maquinadeescribir;
+    src: url(JMHTypewriter.ttf);
+}
+#titulo{
+    margin: 0;
+    padding: 15px;
+    font-family: maquinadeescribir;
+    font-size: 15px;
+    background-color: #dec6de;
+}
+#form {
+    font-family: maquinadeescribir;
+    padding: 15px;
+}
+.separadores{
+    background-color:#c49cc844;
+    height: 50px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
+.titulo{
+    font-family: cursivaimport;
+    font-size: 15px;
+}
+#onix{
+    margin: 30px;
+    height: 300px;
+    width: 300px;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+#nombre{
+    font-family: cursivaimport;
+    font-size: 20px;
+    padding: 10px;
+    padding-right: 150px;
+    padding-top: 30px;
+}
+.texto1{
+    text-align: justify;
+    font-size: 16px;
+    font-family: maquinadeescribir;
+    padding-right: 100px;
+}
+#collardiv{
+    background-color: white;
+    background-color: none;
+    background-image: url(fondo_collares.png);
+    background-repeat: no-repeat;
+    background-size: 1200px;
+    background-position: center;
+    height: 400px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#dato{
+    align-items: center;
+    font-family: maquinadeescribir;
+    font-size: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#botoncarrito{
+    height: 50px;
+    width: 220px;
+    display: inline;
+    display: flex;
+    justify-content: space-between;
+    background-color:#C49CC8;
+    border: #C49CC8;
+    box-shadow: black;
+    margin-right: 500px;
+}
+#carrito{
+    height: 30px;
+    width: 35px;
+    padding-top: 8px;
+    padding-left: 5px;
+}
+#botonleyenda{
+    padding-right: 8px;
+    padding-top: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-family: maquinadeescribir;
+}
+#precio{
+    font-size: 16px;
+    font-family: maquinadeescribir;
+    margin-right: 500px;
+}
+#bfinal{
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    padding: 5px;
+    font-family: maquinadeescribir;
+    font-size: 12px;
+    background-color: #dec6de;
+}
+.barraf{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#imglogobarraf{
+    padding-top: 40px;
+    padding-right: 15px;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}

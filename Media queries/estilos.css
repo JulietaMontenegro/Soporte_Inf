@@ -1,0 +1,326 @@
+
+body{
+    background-color: #F5EDF5;
+    margin: 0;
+    padding: 0;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-family: maquinadeescribir;
+}
+#aconsultas{
+    margin-right: 50px;
+}
+#menu{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    height: 70px;
+    width: 100%;
+    background-color: #C49CC8;
+    align-items: center;
+    padding: 4px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+#imglogo{
+    height: 40px;
+    width: 60px;
+}
+nav a:hover{
+    color:black;
+}
+@font-face{
+    font-family:cursivaimport;
+    src: url(Amarillo.ttf);
+}
+#cajubarra{
+    font-family: cursivaimport;
+    font-size: 15px;
+}
+#imagenredes{
+    width: 80%;
+    height: 300px;
+    margin-top: 330px;
+}
+.imggrandes{
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 80%;
+    height: 20%;
+}
+.titulo{
+    padding-left: 20px;
+    font-family: cursivaimport;
+    font-size: 15px;
+    padding: 25px;
+}
+@font-face{
+    font-family: maquinadeescribir;
+    src: url(JMHTypewriter.ttf);
+}
+.parrafos{
+    font-family: maquinadeescribir;
+    font-size: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#bfinal{
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    padding: 5px;
+    font-family: maquinadeescribir;
+    font-size: 12px;
+    background-color: #dec6de;
+}
+.barraf{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#imglogobarraf{
+    padding-top: 40px;
+    padding-right: 15px;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+.fila{
+    margin-top: 30px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.conte{
+    align-items: center;
+    height: 350px;
+    width: 100%;
+    box-shadow: 0 0 7px #C49CC8;
+    background-color: white;
+    padding-top: 20px;
+    font-family: cursivaimport;
+    margin: 30px;
+}
+.fila{
+    justify-content: space-between;
+}
+#tienda{
+    width: 100%;
+}
+#imgAmatista{
+    height: 150px;
+    width: 150px;
+    margin-left: 8px;
+}
+#botoncarrito{
+    height: 50px;
+    width: 200px;
+    display: inline;
+    display: flex;
+    justify-content: space-between;
+    background-color:#C49CC8;
+    border: #C49CC8;
+    box-shadow: black;
+}
+#carrito{
+    height: 30px;
+    width: 35px;
+    padding-top: 8px;
+    padding-left: 5px;
+}
+#botonleyenda{
+    padding-right: 8px;
+    padding-top: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-family: maquinadeescribir;
+}
+#imgPiedraLunar{
+    width: 90px;
+    height: 150px;
+}
+.separadores{
+    margin-top: 50px;
+    background-color:#c49cc844;
+    height: 60px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
+#imglEstrellas{
+    height: 150px;
+    width: 150px;
+}
+#imgCuarzoRosa{
+    height: 150px;
+    width: 150px;
+}
+#imgLapislazuli{
+    height: 150px;
+    width: 150px;
+}
+#imgOjoTigre{
+    height: 150px;
+    width: 150px;
+}
+#imgEsmeralda{
+    height: 150px;
+    width: 170px;
+}
+#imgCitrino{
+    height: 150px;
+    width: 150px;
+}
+#imgOnix{
+    height: 150px;
+    width: 150px;
+}
+#imgRodocrosita{
+    height: 150px;
+    width: 150px;
+}
+#infoapart{
+    color: black;
+    font-family: maquinadeescribir;
+}
+@media only screen and (max-width: 600px) {
+    .parrafos{
+        font-family: maquinadeescribir;
+        font-size: 15px;
+        margin-left: 20px;
+        margin-right: 20px;
+        justify-content: left;
+    }
+    #menu{
+        display: flex;
+        position: fixed;
+        justify-content: space-between;
+        height: 70px;
+        width: 100%;
+        background-color: #C49CC8;
+        align-items: center;
+        padding: 4px;
+        padding-right: 10px;
+        padding-left: 20px;
+    }
+    .conte{
+        align-items: center;
+        height: 350px;
+        width: 500px;
+        box-shadow: 0 0 7px #C49CC8;
+        background-color: white;
+        padding-top: 20px;
+        font-family: cursivaimport;
+        margin-top: 50px;
+    }
+    .fila{
+        margin-left: 1px;
+
+    }
+    #tienda{
+        width: 600px;
+    }
+    #imgAmatista{
+        height: 150px;
+        width: 150px;
+        margin-left: 8px;
+    }
+    #botoncarrito{
+        height: 50px;
+        width: 150px;
+        display: inline;
+        display: flex;
+        justify-content: space-between;
+        background-color:#C49CC8;
+        border: #C49CC8;
+        box-shadow: black;
+    }
+    #carrito{
+        height: 30px;
+        width: 35px;
+        padding-top: 8px;
+        padding-left: 5px;
+    }
+    #botonleyenda{
+        padding-right: 8px;
+        padding-top: 9px;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        font-family: maquinadeescribir;
+    }
+    #imgPiedraLunar{
+        width: 90px;
+        height: 150px;
+    }
+    .separadores{
+        margin-top: 50px;
+        background-color:#c49cc844;
+        height: 60px;
+        padding-bottom: 2px;
+        padding-right: 2px;
+    }
+    #imglEstrellas{
+        height: 150px;
+        width: 150px;
+    }
+    #imgCuarzoRosa{
+        height: 150px;
+        width: 150px;
+    }
+    #imgLapislazuli{
+        height: 150px;
+        width: 150px;
+    }
+    #imgOjoTigre{
+        height: 150px;
+        width: 150px;
+    }
+    #imgEsmeralda{
+        height: 150px;
+        width: 170px;
+    }
+    #imgCitrino{
+        height: 150px;
+        width: 150px;
+    }
+    #imgOnix{
+        height: 150px;
+        width: 150px;
+    }
+    #imgRodocrosita{
+        height: 150px;
+        width: 150px;
+    }
+    .titulo{
+        padding-left: 20px;
+        font-family: cursivaimport;
+        font-size: 10px;
+        padding: 25px;
+    }
+    .imggrandes{
+        padding-left: 25px;
+        padding-right: 25px;
+        width: 80%;
+        height: 20%;
+        margin-top: 85px;
+    }
+    #imgAmatista{
+        height: 150px;
+        width: 140px;
+        margin-left: 8px;
+    }
+    #imgEsmeralda{
+        height: 150px;
+        width: 140px;
+    }
+
+}

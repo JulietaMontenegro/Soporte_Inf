@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Caju - Compra </title>
+    <link rel="icon" href="logosimp.png">
+    <link rel="stylesheet" href="compra.css">
+</head>
+<body>
+    <header>
+        <div class="texto">
+            <h2 id="cajubarra"> Piedras energéticas </h2>
+        </div>
+        <div class="imgbarra">
+            <img id="imglogo" src="logocomp.png">
+        </div>
+        <nav id="barranav">
+            <a href="index.html"> Volver al inicio </a>
+        </nav>
+    </header>
+    <div class="separadores">
+        <center><h3 class="titulo"> Formulario de compra </h3></center>
+    </div>
+
+    <form action="form.php" method="get" id="form">
+        <p><label>DNI: <input type="number" name="dni" placeholder="dni"></label></p>
+        <p><label>Nombre: <input type="text" name="nombre" placeholder="nombre"></label></p>
+        <p><label>Apellido: <input type="text" name="apellido" placeholder="apellido"></label></p>
+        <p><label>Teléfono: <input type="tel" name="telefono" placeholder="telefono"></label></p>
+        <p><label>Correo: <input type="email" name="correo" placeholder="correo"></label></p>
+        <p><label>Fecha: <input type="date" name="fecha"></label></p>
+        <p>
+            <label for="listado">Producto:</label>
+            <select name="producto" id="listado">
+                <option value="1">amatista</option>
+                <option value="2">piedra lunar</option>
+                <option value="3">lluvia de estrellas</option>
+                <option value="4">cuarzo rosa</option>
+                <option value="5">ojo de tigre</option>
+                <option value="6">lapislázuli</option>
+                <option value="7">esmeralda</option>
+                <option value="8">citrino</option>
+                <option value="9">ónix negro</option>
+                <option value="10">rodocrosita</option>
+            </select>
+        </p>
+        <p><label>Cantidad: <input type="number" name="cantidad" placeholder="cantidad"></label></p>
+        <input type="submit" value="Enviar"/>
+    </form>
+    
+    <br>
+    <div id="text">
+    <center><p class="txtfinal"> ¡Muchas gracias por tu compra! </p></center>
+    <center><p class="txtfinal">En breve nos estaremos comunicando con vos para realizar la entrega de el/los producto/s :)</p></center>
+    <center><p class="txtfinal">Por cualquier consulta hablanos al md de instagram: </p><a id="ig" href="https://www.instagram.com/caju.piedras_/"> caju.piedras_</center></a>
+    </div>
+    <header id="bfinal">
+        <div class="barrafinal">
+        <h3 class="barraf">Caju - Piedras energéticas</h3>
+        <p class="barraf">Redes: @caju.piedras_</p>
+        <p class="barraf">Por cualquier consulta o duda podes mandarnos un mensaje a nuestra cuenta de instagram <a href="https://www.instagram.com/caju.piedras_/"> @caju.piedras_</a></p>
+        </div>
+        <div class="imgbarrafinal">
+            <img id="imglogobarraf" src="logosimp.png">
+        </div>
+    </header>
